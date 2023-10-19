@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+function reverseWords(sentence) {
+
+    let words = sentence.split(' ');
+  
+    
+    let reversedWords = words.map(word => {
+      return word.split('').reverse().join(''); 
+    });
+  
+  
+    return reversedWords.join(' ');
+  }
+  
+  let input = "Hello Manohar how are you";
+  let result = reverseWords(input);
+  
+  console.log(result); 
+</script>
